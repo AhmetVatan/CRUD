@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD- LOCAL STORAGE</h1>
+        <form id="form">
+            <input type="text" autocomplete="off" placeholder="add new user" id="name">
+            <!-- autocomplete off nedir? inputa text girdiğinde altta otomatikmen daha önce girilmiş yazılar beliriyo 
+            örneğin xxxx@gmail.com diye bunlar gözükmesin diye bu autocomplete offu yazıyoruz. -->
+            <button class="success">
+                <i class="fas fa-plus"></i>
+            </button>
+        </form>
+        <div class="user" id="nameList">
+            <div class="user-item">
+                <p>
+                    <i class="fas fa-user"></i>
+                    <span>User :</span> isim
+                </p>
+                <div class="buttons">
+                    <button class="primary" onclick="Edit()">
+                        <i class="fas fa-edit"></i>
+                        Edit
+                    </button>
+                    <button class="danger" onclick="Delete()">
+                        <i class="fas fa-trash"></i>
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
